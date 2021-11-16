@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TodoList from '@/compomemts/TodoList'
+import TodoList from '@/pages/projects/vue-do/TodoList.vue'
 
 export default {
   name: 'App',
