@@ -4,8 +4,7 @@ import Home from "@/pages/Home.vue"
 import About from "@/pages/About.vue"
 import Contact from "@/pages/Contact.vue"
 import Projects from "@/pages/projects/AllProjects.vue"
-import VueDo from "@/pages/projects/vue-do"
-import GiphyViewer from "@/pages/projects/"
+import VueDo from "@/pages/projects/vue-do/App.vue"
 
 Vue.use(VueRouter)
 
@@ -34,14 +33,9 @@ export default new VueRouter({
             component: Projects
         },
         {
-            path: 'https://github.com/Briain-Keddy/vue-do',
+            path: '/demo/vue-do',
             name: 'vue-do',
             component: VueDo
-        },
-        {
-            path: 'https://github.com/Briain-Keddy/vue-giph',
-            name: 'giphy-viewer',
-            component: GiphyViewer
         }
     ]
 })

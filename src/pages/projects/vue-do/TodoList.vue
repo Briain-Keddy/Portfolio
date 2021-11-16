@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import TodoItem from "@/TodoItem.vue"
+import TodoItem from '@/pages/projects/vue-do/TodoItem.vue'
 
 export default {
   name: 'TodoList',
@@ -30,6 +30,11 @@ export default {
           todo: ""
       };
   },
+  mounted(){
+      if(localStorage.savedList){
+          this.list = JSON.parse(localStorage.getItem("savedList"));
+      }
+  },
   methods:{
       addNewTodo(){
           if(!this.todo){
@@ -37,8 +42,13 @@ export default {
               return;
           }
           const newId = Math.max.apply(null, this.list.map(t =>t.id)) + 1;
-          this.list.push({ id: newId, text: this.todo, done: false})
+          this.list.push({ 
+              id: newId,
+              text: this.todo,
+              done: false
+           });
           this.todo = "";
+          localStorage.setItem("savedList", JSON.stringify(this.list))
       },
       completeTodo(todo){
           const todoIndex = this.list.indexOf(todo);
