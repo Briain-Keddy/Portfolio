@@ -1,11 +1,17 @@
 <template>
   <div>
       This the All Project component
-      <div v-for="Project in projects"
-      :key="Project.id">
-        Title: {{ Project.title }}<br>
-        Description: {{ Project.description}}<br>
-        <router-link :to="{name: project.demo}">Demo</router-link> 
+      <div>
+        <b-card 
+          header="project"
+          header-text-varient="white"
+          header-bg-varient="dark"
+          v-for="project in projects"
+          :key="project.id">
+            Title: {{ project.title }}<br>
+            Description: {{ project.description}}<br>
+            <router-link :to="{name: project.demo}">Demo</router-link>
+        </b-card>
       </div>
   </div>
 </template>
