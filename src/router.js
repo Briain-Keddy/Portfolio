@@ -4,7 +4,7 @@ import Home from "@/pages/Home.vue"
 import About from "@/pages/About.vue"
 import Contact from "@/pages/Contact.vue"
 import Projects from "@/pages/projects/AllProjects.vue"
-import VueDo from "@/pages/projects/vue-do"
+import VueDo from "@/pages/projects/vue-do/App.vue"
 
 Vue.use(VueRouter)
 
