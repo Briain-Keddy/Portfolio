@@ -10,5 +10,17 @@
         "links":{
             "github": "https://github.com/Briain-Keddy/vue-do"
         }
+    },
+    {
+        "title": "VueGiph",
+        "description": "My Second Vue.js vueGiph app",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuegiph.png"],
+        "date": "2021",
+        "demo": "vue-giph",
+        "links":{
+            "github": "https://github.com/Briain-Keddy/vue-giph"
+        }
     }
 ]
