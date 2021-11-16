@@ -1,3 +1,4 @@
+
 <template>
   <div>
       This the All Project component
@@ -44,4 +45,3 @@ export default {
 </script>
 
 <style>
-</style>
