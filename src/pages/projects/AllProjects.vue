@@ -2,15 +2,15 @@
   <div>
       This the All Project component
       <div>
-      <b-card 
-      header="project" 
-      header-text-varient="white" 
-      header-bg-varient="dark" 
-      v-for="project in projects"
-      :key="project.id">
-        Title: {{ project.title }}<br>
-        Description: {{ project.description}}<br>
-        <router-link :to="{name: project.demo}">Demo</router-link> 
+        <b-card 
+          header="project"
+          header-text-varient="white"
+          header-bg-varient="dark"
+          v-for="project in projects"
+          :key="project.id">
+            Title: {{ project.title }}<br>
+            Description: {{ project.description}}<br>
+            <router-link :to="{name: project.demo}">Demo</router-link>
         </b-card>
       </div>
   </div>
