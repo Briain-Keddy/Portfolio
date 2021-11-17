@@ -7,7 +7,7 @@
         header="project"
         header-text-varient="white"
         header-bg-varient="dark"
-        v-for="project in projects"
+        v-for="project in filterProjects"
         :key="project.id">
           Title: {{ project.title }}<br>
           Description: {{ project.description}}<br>
