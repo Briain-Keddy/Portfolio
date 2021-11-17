@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <input type="text" v-model="searchTerm" />
