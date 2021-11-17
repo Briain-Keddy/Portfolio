@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input type="text" v-model="searchTerm" />
-    <button @click="searchProjects">Search</button>
+    <input type="text" v-model="searchTerm" /><br><br>
+    <button @click="searchProjects">Search</button><br>
     <div>
       <b-card 
         header="project"
@@ -29,9 +29,19 @@ export default {
       searchTerm: ""
     }
   },
+
+  computed:{
+    filterProjects(){
+      return this.projects.filter(project => {
+        return project.title.toLowerCase().includes(this.searchTerm.toLowerCase())
+      })
+    }
+  },
+
   mounted(){
     this.getAllProjects()
   },
+
   methods: {
     getAllProjects(){
       fetch('./data/projects.json')
@@ -48,3 +58,4 @@ export default {
 </script>
 
 <style>
+</style>
