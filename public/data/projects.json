@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "VueDO",
         "description": "My First Vue.js todo app",
         "website": "",
@@ -12,6 +13,7 @@
         }
     },
     {
+        "id": 2,
         "title": "VueGiph",
         "description": "My Second Vue.js vueGiph app",
         "website": "",
@@ -19,6 +21,32 @@
         "images": ["vuegiph.png"],
         "date": "2021",
         "demo": "vue-giph",
+        "links":{
+            "github": "https://github.com/Briain-Keddy/vue-giph"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Festivals App",
+        "description": "My Second Vue.js vueGiph app",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuegiph.png"],
+        "date": "2021",
+        "demo": "",
+        "links":{
+            "github": "https://github.com/Briain-Keddy/vue-giph"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Sample App",
+        "description": "My Second Vue.js vueGiph app",
+        "website": "",
+        "tags": ["Vue"],
+        "images": ["vuegiph.png"],
+        "date": "2021",
+        "demo": "",
         "links":{
             "github": "https://github.com/Briain-Keddy/vue-giph"
         }
