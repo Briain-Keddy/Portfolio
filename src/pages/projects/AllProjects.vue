@@ -1,7 +1,6 @@
 <template>
   <div>
     <input type="text" v-model="searchTerm" /><br><br>
-    <button @click="searchProjects">Search</button><br>
     <div>
       <b-card 
         header="project"
@@ -11,7 +10,7 @@
         :key="project.id">
           Title: {{ project.title }}<br>
           Description: {{ project.description}}<br>
-          <router-link :to="{name: project.demo}">Demo</router-link>
+          <router-link v-if="project.demo" :to="{name: project.demo}">Demo</router-link>
       </b-card>
     </div>
   </div>
@@ -51,8 +50,6 @@ export default {
         this.projects= data
       })
     },
-
-    searchProjects(){}
   }
 }
 </script>
