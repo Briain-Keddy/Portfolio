@@ -1,7 +1,6 @@
 
 <template>
   <div>
-      This the All Project component
       <div>
         <b-card 
           header="project"
