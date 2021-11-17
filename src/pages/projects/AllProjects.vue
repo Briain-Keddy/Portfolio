@@ -1,7 +1,7 @@
 <template>
   <div class="columns">
     <div class="column">
-      <b-field></b-field>
+      <b-field label=""></b-field>
       <div class="card"
         v-for="project in filterProjects"
         :key="project.id">
@@ -19,8 +19,12 @@
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">John Smith</p>
-              <p class="subtitle is-6">@johnsmith</p>
+              <p class="title is-4">{{ project.title }}</p>
+              <p class="subtitle is-6">
+                <b-taglist>
+                  <b-tag v-for="tag in project.tag" :key="tag" type="is-primary"></b-tag>
+                </b-taglist>
+              </p>
               <b-field v-for="tag in project.tags" :key="tag">
                 <b-tag>{{ tag }}</b-tag>
               </b-field>
