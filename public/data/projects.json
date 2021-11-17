@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "VueDO",
+        "title": "VueDo",
         "description": "My First Vue.js todo app",
         "website": "",
         "tags": ["Vue"],
