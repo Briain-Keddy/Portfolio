@@ -14,11 +14,11 @@
         </div>
         <div class="card-content">
           <div class="media">
-            <!-- <div class="media-left">
+            <div class="media-left">
               <figure class="image is-48x48">
                 <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
               </figure>
-            </div> -->
+            </div>
             <div class="media-content">
               <p class="title is-4">{{ project.title }}</p>
               <p class="subtitle is-6">
@@ -32,6 +32,7 @@
                   </b-tag>
                 </b-taglist>
               </p>
+              <p v-if="project.demo.length > 0" class=" is-4"><router-link :to="{name: project.demo}">Demo</router-link></p>
             </div>
           </div>
           <div class="content">
