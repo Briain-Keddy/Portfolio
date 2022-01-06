@@ -28,27 +28,27 @@
     {
         "id": 3,
         "title": "Festivals App",
-        "description": "My Second Vue.js vueGiph app",
+        "description": "This Festivals app",
         "website": "",
         "tags": ["Vue"],
-        "images": ["vuegiph.png"],
+        "images": ["festivalsApp.png"],
         "date": "2021",
         "demo": "",
         "links":{
-            "github": "https://github.com/Briain-Keddy/vue-giph"
+            "github": ""
         }
     },
     {
         "id": 4,
         "title": "Sample App",
-        "description": "My Second Vue.js vueGiph app",
+        "description": "This is Sample app",
         "website": "",
         "tags": ["Vue"],
-        "images": ["vuegiph.png"],
+        "images": ["sample.png"],
         "date": "2021",
         "demo": "",
         "links":{
-            "github": "https://github.com/Briain-Keddy/vue-giph"
+            "github": ""
         }
     }
 ]
