@@ -2,7 +2,7 @@
   <div>
     <b-col>
       <b-row>
-        this is the app
+        This is the Giphy Viewer
         <GiphyViewer />
       </b-row>
     </b-col>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import GiphyViewer from '@/pages/projects/GiphyViewer.vue'
+import GiphyViewer from '@/pages/projects/vue-giph/GiphyViewer.vue'
 
 export default {
   name: 'App',
