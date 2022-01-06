@@ -33,7 +33,7 @@
                 </b-taglist>
               </p>
               <p v-if="project.demo.length > 0" class=" is-4">
-                <router-link :to="{name: project.demo}">Demo</router-link>
+                <router-link :to="{name: project.demo}" target="_blank">Demo</router-link>
               </p>
               <p v-if="project.website">
                 <a :href="project.website" target="_blank">Website</a>
