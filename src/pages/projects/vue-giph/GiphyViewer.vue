@@ -9,7 +9,7 @@
     <b-card v-for="gif in gifs" 
       :key="gif.id" 
       :img-src="gif.images.fixed_width.url" 
-      :img-alt="git.title"
+      :img-alt="gif.title"
     >
     <b-card-text>
       <a :href="gif.url" target="_blank">{{ gif.title }}</a>
@@ -31,12 +31,16 @@ export default {
   },
   data(){
       return{
-        gifs: []
+        gifs: [],
+        term: ""
       };
   },
-  mouunted(){
+  mounted(){
     axios.get(`${GIPHY_URL}/trending?api_key=${API_KEY}`)
-         .then(respone =>(this.gifs = respone.data.data))
+         .then(response => {
+           console.log(response.data)
+           this.gifs = response.data.data
+           })
          .catch(error => console.log(error))
   },
   methods:{
