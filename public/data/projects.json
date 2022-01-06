@@ -35,7 +35,7 @@
         "date": "2021",
         "demo": "",
         "links":{
-            "github": ""
+            "github": "https://github.com/Briain-Keddy/vue-festivals-app-start-vuex"
         }
     },
     {
@@ -48,7 +48,7 @@
         "date": "2021",
         "demo": "",
         "links":{
-            "github": ""
+            "github": "https://github.com/Briain-Keddy/vue-festivals-app-start-no-vuex"
         }
     }
 ]
