@@ -32,7 +32,15 @@
                   </b-tag>
                 </b-taglist>
               </p>
-              <p v-if="project.demo.length > 0" class=" is-4"><router-link :to="{name: project.demo}">Demo</router-link></p>
+              <p v-if="project.demo.length > 0" class=" is-4">
+                <router-link :to="{name: project.demo}">Demo</router-link>
+              </p>
+              <p v-if="project.website">
+                <a :href="project.website" target="_blank">Website</a>
+              </p>
+              <p v-if="project.links.github">
+                <a :href="project.links.github" target="_blank">Github</a>
+              </p>
             </div>
           </div>
           <div class="content">
